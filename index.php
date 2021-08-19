@@ -1,10 +1,10 @@
 <?php
 
-////////////////=============[Made with ❤️ by Mr.Acid]===============////////////////
+////////////////=============[Made By Sl Meadia Tech]===============////////////////
 
 ///https://api.telegram.org/bot<token>/setwebhook?url=<url>
 
-$botToken = ""; // Enter ur bot token
+$botToken = "1960357115:AAEO_1sD48a2LbGSV_-sLpVcuRJTvS1kLlM"; // Enter ur bot token
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -682,7 +682,7 @@ $url = $GLOBALS[website]."/sendMessage?chat_id=".$chatId."&text=".$message."&rep
 file_get_contents($url);      
 }
 
-////////////////=============[Mr.Acid]===============////////////////
-////////==========[Used api raw bot of @cxvom]============////////
+////////////////=============[Sl Meadia Tech]===============////////////////
+////////==========[Join Our Group]============////////
 
 ?>
