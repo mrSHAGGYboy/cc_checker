@@ -4,8 +4,8 @@
 
 ///https://api.telegram.org/bot<token>/setwebhook?url=<url>
 
-$botToken = "1960357115:AAEO_1sD48a2LbGSV_-sLpVcuRJTvS1kLlM"; // Enter ur bot token
-$website = "https://api.telegram.org/bot".1960357115:AAEO_1sD48a2LbGSV_-sLpVcuRJTvS1kLlM;
+$botToken = "1991997095:AAFLyzux7kCl6k61RC4GnA09_uo1YU-azdE"; // Enter ur bot token
+$website = "https://api.telegram.org/bot".1991997095:AAFLyzux7kCl6k61RC4GnA09_uo1YU-azdE;
 error_reporting(0);
 $update = file_get_contents('php://input');
 $update = json_decode($update, TRUE);
