@@ -4,8 +4,8 @@
 
 ///https://api.telegram.org/bot<token>/setwebhook?url=<url>
 
-$botToken = "1991997095:AAFLyzux7kCl6k61RC4GnA09_uo1YU-azdE"; // Enter ur bot token
-$website = "https://api.telegram.org/bot".1991997095:AAFLyzux7kCl6k61RC4GnA09_uo1YU-azdE;
+$botToken = "1838143866:AAFLVE3lakYpFXDL7_yQBxS2TFF6ld8o98M"; // Enter ur bot token
+$website = "https://api.telegram.org/bot".1838143866:AAFLVE3lakYpFXDL7_yQBxS2TFF6ld8o98M;
 error_reporting(0);
 $update = file_get_contents('php://input');
 $update = json_decode($update, TRUE);
@@ -13,27 +13,27 @@ $print = print_r($update);
 $chatId = $update["message"]["chat"]["id"];
 $gId = $update["message"]["from"]["id"];
 $userId = $update["message"]["from"]["id"];
-$firstname = $update["message"]["from"]["first_name"];
-$username = $update["message"]["from"]["username"];
+$firstname = $update["message"]["from"]["SMT CC CHECKER"];
+$username = $update["message"]["from"]["@smt_cc_checker_bot"];
 $message = $update["message"]["text"];
 $message_id = $update["message"]["message_id"];
 
 //////////=========[Start Command]=========//////////
 
 if ((strpos($message, "!start") === 0)||(strpos($message, "/start") === 0)){
-sendMessage($chatId, "<b>Hello there!!%0AType /cmds to know all my commands!!%0A%0ABot Made by Mr.Acid @cxvom</b>");
+sendMessage($chatId, "<b>Hello there!!%0AType /cmds to know all my commands!!%0A%0ABot Made by SL MEADIA TECH </b>");
 }
 
 //////////=========[Cmds Command]=========//////////
 
 elseif ((strpos($message, "!cmds") === 0)||(strpos($message, "/cmds") === 0)){
-sendMessage($chatId, "<u>Bin lookup:</u> <code>!bin</code> xxxxxx%0A<u>SK Key Check:</u> <code>!sk</code> sk_live%0A<u> To know ur info%0A%0A<b>Bot Made by Mr.Acid </b>");
+sendMessage($chatId, "<u>Bin lookup:</u> <code>!bin</code> xxxxxx%0A<u>SK Key Check:</u> <code>!sk</code> sk_live%0A<u> To know ur info%0A%0A<b>Bot Made by SL MEADIA TECH </b>");
 }
 
 //////////=========[Info Command]=========//////////
 
 elseif ((strpos($message, "!info") === 0)||(strpos($message, "/info") === 0)){
-sendMessage($chatId, "<u>ID:</u> <code>$userId</code>%0A<u>First Name:</u> $firstname%0A<u>Username:</u> @$username%0A%0A<b>Bot Made by Mr.Acid </b>");
+sendMessage($chatId, "<u>ID:</u> <code>$userId</code>%0A<u>First Name:</u> $firstname%0A<u>Username:</u> @$username%0A%0A<b>Bot Made by SL MEADIA TECH </b>");
 }
 
 //////////=========[Bin Command]=========//////////
@@ -74,7 +74,7 @@ curl_close($ch);
 
  
 curl_close($ch);
-sendMessage($chatId, '<b>✅ Valid Bin</b>%0A<b>Bank:</b> '.$bank.'%0A<b>Country:</b> '.$name.''.$emoji.'%0A<b>Brand:</b> '.$brand.'%0A<b>Card:</b> '.$scheme.'%0A<b>Type:</b> '.$type.'%0A<b>Currency:</b> '.$currency.'%0A<b>Checked By:</b> @'.$username.'%0A%0A<b>Bot Made by Mr.Acid</b>');
+sendMessage($chatId, '<b>✅ Valid Bin</b>%0A<b>Bank:</b> '.$bank.'%0A<b>Country:</b> '.$name.''.$emoji.'%0A<b>Brand:</b> '.$brand.'%0A<b>Card:</b> '.$scheme.'%0A<b>Type:</b> '.$type.'%0A<b>Currency:</b> '.$currency.'%0A<b>Checked By:</b> @'.$username.'%0A%0A<b>Bot Made by SL MEADIA TECH </b>');
 }
 curl_close($ch);
 
